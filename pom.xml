@@ -7,7 +7,7 @@
     <groupId>edu.cwu.brienenj</groupId>
     <artifactId>lab2</artifactId>
     <version>1.0</version>
-    
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -19,6 +19,21 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>edu.cwu.brienenj.lab2.TreeDemo</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
