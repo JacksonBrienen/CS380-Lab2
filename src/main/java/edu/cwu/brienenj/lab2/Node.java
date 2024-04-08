@@ -1,3 +1,4 @@
+package edu.cwu.brienenj.lab2;
 
 public class Node{
     int value;
